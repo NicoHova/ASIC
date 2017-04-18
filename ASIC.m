@@ -23,7 +23,8 @@ function menuFinalizacion
 endfunction
 
 #COMIENZO DEL PROGRAMA--------------------------------------------------------------------
-while (1)
+
+while (1) #Empezar asi ya es feo guacho
 	menuIngresarFuncion
 
 	opcion = input("Elija una opción.\n");
@@ -33,11 +34,11 @@ while (1)
 	   		numerador = input("Ingrese los coeficientes del numerador entre corchetes.\n");
 	   		denominador = input("Ingrese los coeficientes del denominador entre corchetes.\n");
 	   		FT = tf([numerador],[denominador]);
-	      printf("\n")
+	      		printf("\n")
 		case 2
-	   		printf("Hola\n");
+	   		printf("Hola\n")
 		otherwise
-	    	printf("La opción ingresada no es válida\n")
+	    		printf("La opción ingresada no es válida\n")
 	endswitch
 
 	menuPrincipal
@@ -62,7 +63,7 @@ while (1)
 	  	case 8
 	  		
 		otherwise
-	    	printf("La opción ingresada no es válida.\n")
+	    		printf("La opción ingresada no es válida.\n")
 	endswitch
 
 	menuFinalizacion
@@ -75,4 +76,5 @@ while (1)
 endwhile
 
 printf("El programa ha finalizado felizmente")
+
 #FIN DEL PROGRAMA--------------------------------------------------------------------
