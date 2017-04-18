@@ -62,7 +62,13 @@ while (1) #Empezar asi ya es feo guacho
 	  	case 7
 
 	  	case 8
-	  		
+	  		printf("Expresion: \n")
+	  		FT
+	  		printf("Cero: %d\n", ceros)
+	  		printf("Polo: %d\n", polos)
+	  		printf("Ganancia: %d\n", ganancia)
+	  		pzmap(FT)
+	  		printf("\n")
 		otherwise
 	    		printf("La opción ingresada no es válida.\n")
 	endswitch
