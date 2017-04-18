@@ -20,33 +20,9 @@ function menuFinalizacion
 	printf("2) Finalizar.\n")
 endfunction
 
-function polos(functf)
-	
-endfunction
-
-function ceros(functf)
-	
-endfunction
-
-function ganancia(functf)
-	
-endfunction
-
-function polosCerosGanancia(functf)
-	
-endfunction
-
-function estabilidad(functf)
-	
-endfunction
-
-function distribuciónPolosyCeros(functf)
-	
-endfunction
-
-//COMIENZO DEL PROGRAMA--------------------------------------------------------------------
+#COMIENZO DEL PROGRAMA--------------------------------------------------------------------
 
 func = input ("Ingrese una función de transferencia\n");
 
 
-//FIN DEL PROGRAMA--------------------------------------------------------------------
+#FIN DEL PROGRAMA--------------------------------------------------------------------
