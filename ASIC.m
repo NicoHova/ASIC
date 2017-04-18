@@ -34,6 +34,7 @@ while (1) #Empezar asi ya es feo guacho
 	   		numerador = input("Ingrese los coeficientes del numerador entre corchetes.\n");
 	   		denominador = input("Ingrese los coeficientes del denominador entre corchetes.\n");
 	   		FT = tf([numerador],[denominador]);
+	   		[ceros,polos,ganancia] = tf2zp (FT);
 	      		printf("\n")
 		case 2
 	   		printf("Hola\n")
@@ -49,11 +50,11 @@ while (1) #Empezar asi ya es feo guacho
 		case 1
 	   		FT
 		case 2
-
+			ceros
 	   	case 3
-	   		
+	   		polos
 		case 4
-
+			ganancia
 		case 5
 	   		
 		case 6
@@ -75,6 +76,6 @@ while (1) #Empezar asi ya es feo guacho
 	endif
 endwhile
 
-printf("El programa ha finalizado felizmente")
+printf("El programa ha finalizado felizmente\n")
 
 #FIN DEL PROGRAMA--------------------------------------------------------------------
