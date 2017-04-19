@@ -22,6 +22,17 @@ function menuFinalizacion
 	printf("2) Finalizar.\n")
 endfunction
 
+function esEstable(func)
+	estabilidad = isstable(func);
+
+	if(estabilidad == 1)
+		printf("El sistema es estable\n\n")
+	else 
+		printf("El sistema no es estable\n\n")
+	endif
+endfunction
+
+
 #COMIENZO DEL PROGRAMA--------------------------------------------------------------------
 
 while (1) #Empezar asi ya es feo guacho
@@ -41,8 +52,10 @@ while (1) #Empezar asi ya es feo guacho
 	   		polos = input("Ingrese los polos de la funcion transferencia entre corchetes\n");
 	   		ganancia = input("Ingrese la ganancia de la funcion transferencia\n");
 	   		FT = zpk(ceros,polos,ganancia);
+	   		printf("\n")
 		otherwise
 	    		printf("La opción ingresada no es válida\n")
+	    		break
 	endswitch
 
 	menuPrincipal
@@ -63,7 +76,7 @@ while (1) #Empezar asi ya es feo guacho
 		case 6
 			pzmap(FT)
 	  	case 7
-	  		#ACA HAY QUE PONER SI EL SISTEMA ES ESTABLE O NO
+	  		esEstable(FT)
 	  	case 8
 	  		printf("Expresion: \n")
 	  		FT
@@ -71,9 +84,10 @@ while (1) #Empezar asi ya es feo guacho
 	  		printf("Polo: %d\n", polos)
 	  		printf("Ganancia: %d\n", ganancia)
 	  		pzmap(FT)
-	  		printf("\n")
+	  		esEstable(FT)
 		otherwise
 	    		printf("La opción ingresada no es válida.\n")
+	    		break
 	endswitch
 
 	menuFinalizacion
