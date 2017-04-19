@@ -37,7 +37,10 @@ while (1) #Empezar asi ya es feo guacho
 	   		[ceros,polos,ganancia] = tf2zp (FT);
 	      		printf("\n")
 		case 2
-	   		printf("Hola\n")
+	   		ceros = input("Ingrese los ceros de la funcion transferencia entre corchetes\n");
+	   		polos = input("Ingrese los polos de la funcion transferencia entre corchetes\n");
+	   		ganancia = input("Ingrese la ganancia de la funcion transferencia\n");
+	   		FT = zpk(ceros,polos,ganancia);
 		otherwise
 	    		printf("La opción ingresada no es válida\n")
 	endswitch
@@ -56,11 +59,11 @@ while (1) #Empezar asi ya es feo guacho
 		case 4
 			ganancia
 		case 5
-	   		
+	   		#ACA HAY QUE PONER LA EXPRESION MEDIANTE LOS CEROS POLOS Y GANANCIA
 		case 6
 			pzmap(FT)
 	  	case 7
-
+	  		#ACA HAY QUE PONER SI EL SISTEMA ES ESTABLE O NO
 	  	case 8
 	  		printf("Expresion: \n")
 	  		FT
