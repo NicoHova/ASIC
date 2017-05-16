@@ -17,6 +17,12 @@ function menuPrincipal
   	printf("8) Obtener todas las características de la función.\n")
 endfunction
 
+function imprimirZPK(z,p,k)
+  	printf("Cero: %d\n", z)
+	printf("Polo: %d\n", p)
+	printf("Ganancia: %d\n", k)
+endfunction
+
 function menuFinalizacion
 	printf("1) Ingresar otra función.\n")
 	printf("2) Finalizar.\n")
@@ -72,17 +78,16 @@ while (1) #Empezar asi ya es feo guacho
 		case 4
 			ganancia
 		case 5
-	   		#ACA HAY QUE PONER LA EXPRESION MEDIANTE LOS CEROS POLOS Y GANANCIA
+      			imprimirZPK(ceros,polos,ganancia)
 		case 6
 			pzmap(FT)
 	  	case 7
 	  		esEstable(FT)
 	  	case 8
-	  		printf("Expresion: \n")
+	  		printf("Expresion de la funcion transferencia: \n")
 	  		FT
-	  		printf("Cero: %d\n", ceros)
-	  		printf("Polo: %d\n", polos)
-	  		printf("Ganancia: %d\n", ganancia)
+	  		imprimirZPK(ceros,polos,ganancia)
+        printf("\n")
 	  		pzmap(FT)
 	  		esEstable(FT)
 		otherwise
