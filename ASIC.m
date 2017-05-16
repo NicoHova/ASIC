@@ -87,7 +87,7 @@ while (1) #Empezar asi ya es feo guacho
 	  		printf("Expresion de la funcion transferencia: \n")
 	  		FT
 	  		imprimirZPK(ceros,polos,ganancia)
-        printf("\n")
+        		printf("\n")
 	  		pzmap(FT)
 	  		esEstable(FT)
 		otherwise
